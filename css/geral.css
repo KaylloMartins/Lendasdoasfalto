@@ -1,79 +1,104 @@
-#corpo {
-
-  border: 3px solid black;
-  width: auto;
-  height: auto;
-}
-
-
-/* Resetando margens e preenchimentos padrão */
+/* Reset padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Contêiner que organiza as divs */
-.container {
-    display: flex;  /* Ativa o Flexbox */
-    gap: 10px;      /* Espaçamento entre as divs */
-    justify-content: center; /* Centraliza no meio da tela */
-    margin-top: 50px; /* Adiciona um espaçamento no topo */
-}
-
-/* Estilização das divs */
-
-
-
-#topo {
-
+  }
+  
+  /* Estrutura principal */
+  #corpo {
+    border: 3px solid black;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Topo */
+  #topo {
     border: 3px solid rgb(6, 219, 209);
-    width: auto;
+    width: 100%;
     height: 100px;
+    background-color: lightgrey;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  /* Menu */
+  #menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    min-height: 50px;
+  }
+  
+  .botao {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 0;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .botao:hover {
+    background-color: #666;
+  }
+  
+  #meio {
+
+    display: flex;
+    flex: 1;
+  }
+  #esquerda, #centro, #direita {
+    height: 700px;
+    padding: 10px;
+  }
+  
+  #esquerda {
+    width: 25%;
+    border: 3px solid red;
+    background-color: lightcoral;
+  }
+  
+  #centro {
+    width: 50%;
+    border: 3px solid yellow;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  #direita {
+    width: 25%;
+    border: 3px solid rebeccapurple;
+    background-color: lightblue;
+  }
+  
+  /* Organização horizontal das 3 colunas */
+  #corpo > #esquerda,
+  #corpo > #centro,
+  #corpo > #direita {
+    float: left;
+  }
 
   
-
-}
-#centro {
-
-    width: 50%;
-    height: 700px;
-    border: 3px solid yellow;
-    min-width: 250px;
-    display: inline-block;
-    vertical-align: top;
-
-   
-   
-
-
-}
-
-#direita {
-    width: 25%;
-    height: 700px;
-    border: 3px solid rebeccapurple;
-    min-width: 250px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-#esquerda {
-
-    width: 24%;
-    height: 700px;
-    border: 3px solid red;
-    min-width: 250px;
-    display: inline-block;
-    vertical-align: top;
-
-}
-
-#rodape {
-
-    border: 3px solid red;
-    width: auto;
+  /* Rodapé */
+  #rodape {
+    clear: both;
+    border: 3px solid green;
+    width: 100%;
     height: 100px;
-
-
-}
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+  }
+  
+  /* Imagens nas colunas */
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
