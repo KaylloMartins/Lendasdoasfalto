@@ -1,40 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#SavetheManuals</title>
+    <title>Lendas do Asfalto - Mustang, Camaro, Challenger</title>
+    <meta name="description" content="Celebrando os 4 ícones automotivos: Ford Mustang, Chevrolet Camaro, Porsche 911 e Dodge Challenger">
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/geral.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
 </head>
-<body>                                                                         
-    <div id="corpo">
-        <div id="topo">#SavetheManuals</div>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>As Lendas do Asfalto</h1>
+           <center> <p> - Ford Mustang • Chevrolet Camaro • Dodge Challenger -</p> </center>
+            
+    
+    </header>
 
-        <div id="menu">
-            <a href="pagina1.html" class="botao">Bot 1</a>
-            <a href="pagina2.html" class="botao">Bot 2</a>
-            <a href="pagina3.html" class="botao">Bot 3</a>
-            <a href="pagina4.html" class="botao">Bot 4</a>
-            <a href="pagina5.html" class="botao">Bot 5</a>
+    <!-- Seção de Modelos -->
+    <section id="modelos" class="modelos-destaque">
+        <div class="container">
+            <h2 class="section-title">Lendas Automotivas</h2>
+            <p class="section-subtitle">Conheça os ícones que definiram eras</p>
+            
+            <div class="models-grid">
+                <!-- Mustang -->
+                <a href="modelos/mustang.html" class="modelo-card mustang">
+                    <img src="css/imagem/gt500.jpg" alt="Ford Mustang GT" class="modelo-img">
+                    <div class="modelo-overlay">
+                        <h3 class="modelo-title">Mustang GT</h3>
+                        <div class="modelo-specs">
+                            <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 5.2L V8</span>
+                            <span class="spec-item"><i class="fas fa-bolt"></i> 760 HP</span>
+                            <span class="spec-item"><i class="fas fa-cogs"></i> 7-speed</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Camaro -->
+                <a href="modelos/camaro.html" class="modelo-card camaro">
+                    <img src="css/imagem/camaro.jpg" alt="Chevrolet Camaro ZL1" class="modelo-img">
+                    <div class="modelo-overlay">
+                        <h3 class="modelo-title">Camaro</h3>
+                        <div class="modelo-specs">
+                            <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 6.2L V8</span>
+                            <span class="spec-item"><i class="fas fa-bolt"></i> 650 HP</span>
+                            <span class="spec-item"><i class="fas fa-cogs"></i> 6-speed</span>
+                        </div>
+                    </div>
+                </a>
+                
+               
+                
+                <!-- Challenger -->
+                <a href="modelos/challenger.html" class="modelo-card challenger">
+                    <img src="css/imagem/dodge.jpg" alt="Dodge Challenger" class="modelo-img">
+                    <div class="modelo-overlay">
+                        <h3 class="modelo-title">Challenger</h3>
+                        <div class="modelo-specs">
+                            <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 6.2L V8</span>
+                            <span class="spec-item"><i class="fas fa-bolt"></i> 717 HP</span>
+                            <span class="spec-item"><i class="fas fa-cogs"></i> 6-speed</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
+  
 
-        <div id="meio">
-            <div id="esquerda">
-                <img src="imagem/gt.jpg" alt="Imagem Lateral Esquerda">
-            </div>
-
-            <div id="centro">
-                <iframe src="https://www.youtube.com/embed/OwmsRM4zSUs" 
-                        title="Vídeo do Projeto" 
-                        allowfullscreen></iframe>
-            </div>
-
-            <div id="direita">
-                <img src="imagem/mustang 2.jpg" alt="Imagem Lateral Direita">
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="footer-logo">LENDAS DO ASFALTO</h2>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+                <p class="copyright">© 2023 Lendas do Asfalto. Todos os direitos reservados.</p>
+                
+                <div class="footer-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Contato</a>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <div id="rodape">Rodapé</div>
-    </div> <!-- Correto: fecha aqui o #corpo -->
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
